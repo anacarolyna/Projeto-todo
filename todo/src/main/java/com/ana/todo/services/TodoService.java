@@ -1,6 +1,8 @@
 package com.ana.todo.services;
 
 
+
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +22,12 @@ public class TodoService {
 		return obj.orElse(null);
 
 	}
+
+	public List<Todo> findAllOpen() {
+		List<Todo> list = repository.findAllOpen();
+		return list;
+	}
+	
+
 
 }
