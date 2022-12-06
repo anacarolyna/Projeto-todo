@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Entity // (name = "Nome que desejo") se quiser colocar
+@Entity //(name = "Nome que desejo") se quiser colocar
 public class Todo implements Serializable{ 
 	private static final long serialVersionUID = 1L;
 
